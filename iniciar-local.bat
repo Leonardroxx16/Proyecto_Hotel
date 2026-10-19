@@ -1,0 +1,8 @@
+@echo off
+setlocal
+cd /d "%~dp0"
+call compilar.bat
+if errorlevel 1 (pause & exit /b 1)
+java -cp "target\tools;tools\lib\*" pe.limastay.tools.Launcher
+if errorlevel 1 pause
+endlocal

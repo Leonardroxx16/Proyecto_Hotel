@@ -1,0 +1,5 @@
+/target/
+/tools/bootstrap/
+/nbproject/private/
+*.mv.db
+*.trace.db
